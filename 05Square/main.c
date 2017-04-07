@@ -14,7 +14,7 @@ void jag_welcome_message()
 {
 }
 
-void jag_custom_interrupt_handler()
+uint16_t jag_custom_interrupt_handler()
 {
 	if (*INT1&C_VIDENA)
 	{
@@ -24,6 +24,7 @@ void jag_custom_interrupt_handler()
         	overlay->p0.data = (uint32_t)overlay_bmp >> 3;
 		}
 	}
+	return 0;
 }
 
 int main()
