@@ -1,5 +1,6 @@
 DEMOS = 01Hello 02Input 03Counter 04Bitmap 05Square \
-	 06Hidden 07Flicker 08Stick 09Sine 10Fractal 11Debug
+		06Hidden 07Flicker 08Stick 09Sine 10Fractal 11Debug \
+		12GpuTimerCpu 13DspTimerDsp
 
 define cleandemo
 	make -C $(1) clean
@@ -15,4 +16,3 @@ all:
 	
 clean:
 	$(foreach var,$(DEMOS), $(call cleandemo,$(var));)
-	

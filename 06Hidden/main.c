@@ -6,13 +6,13 @@
 volatile uint32_t ticks;
 uint16_t jag_console_hide_startup=1; // Prevent initial console show
 
-void jag_custom_interrupt_handler()
+uint16_t jag_custom_interrupt_handler()
 {
 	if (*INT1&C_VIDENA)
 	{
 		++ticks;
 	}
-
+	return 0;
 }
 
 int main()

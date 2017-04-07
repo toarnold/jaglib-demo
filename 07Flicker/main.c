@@ -5,13 +5,13 @@
 
 volatile uint32_t ticks;
 
-void jag_custom_interrupt_handler()
+uint16_t jag_custom_interrupt_handler()
 {
 	if (*INT1&C_VIDENA)
 	{
 		++ticks;
 	}
-
+	return 0;
 }
 
 int main()

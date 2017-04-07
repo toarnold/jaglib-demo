@@ -9,7 +9,7 @@
 
 	.text
 	.dsp
-	;.phrase					; make phrase align, so the blitter can move this block
+	.phrase					; make phrase align, so the blitter can move this block
 _create_sine_table_start::
 	movei	#_sine_tab,r16	; C sine table
 	movei	#ROM_SINE,r17	; ROM sine table

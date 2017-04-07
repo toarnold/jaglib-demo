@@ -2,3 +2,4 @@
 **/*.jag
 **/*.txt
 **/*.bmp
+.vscode/*

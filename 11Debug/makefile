@@ -11,7 +11,7 @@ upload:
 	-jcp -r
 	sleep 4
 	-jcp -c $(BINFILE)
-	$(info >>>>>>>> THie demo will launch the debugger <<<<<<<<)
+	$(info >>>>>>>> This demo will launch the debugger <<<<<<<<)
 
 clean:
 	rm $(BINFILE) -f

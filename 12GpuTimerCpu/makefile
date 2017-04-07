@@ -11,7 +11,7 @@ upload:
 	-jcp -r
 	sleep 4
 	jcp $(BINFILE)
-	$(info >>>>>>>> Test the joystick0 <<<<<<<<)
+	$(info >>>>>>>> Use the GPU PIT timer handled by CPU <<<<<<<<)
 
 clean:
 	rm $(BINFILE) -f
